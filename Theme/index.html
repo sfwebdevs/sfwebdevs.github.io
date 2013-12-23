@@ -10,12 +10,13 @@
     <!-- Le styles -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet">
-	<link rel='stylesheet' id='prettyphoto-css'  href="assets/css/prettyPhoto.css" type='text/css' media='all'>
-  	
+    <link rel='stylesheet' id='prettyphoto-css'  href="assets/css/prettyPhoto.css" type='text/css' media='all'>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
   	<!-- Google Fonts call. Font Used Open Sans & Poly -->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Poly' rel='stylesheet' type='text/css'>    
-	<style>
+  	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  	<link href='http://fonts.googleapis.com/css?family=Poly' rel='stylesheet' type='text/css'>
+  	<style>
       body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
       }
@@ -36,19 +37,21 @@
 
     <!-- JQuery -->
     <script type="text/javascript" src="assets/js/jquery.js"></script>
-    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
   	<!-- prettyPhoto Initialization -->
 	<script type="text/javascript" charset="utf-8">
 	  $(document).ready(function(){
 	    $("a[rel^='prettyPhoto']").prettyPhoto();
 	  });
 	</script>
-  
-  
+
+
+
   </head>
 
   <body>
-  
+
     <!-- Navigation Bar -->
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
@@ -58,12 +61,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">Simple & Flat</a>
+          <a class="brand" href="#">GENERAL ASSEMB.LY WDI SF 2013</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#about">About</a></li>
+              <li><a href="#services">About</a></li>
+              <li><a href="#about">Students</a></li>
               <li><a href="#projects">Projects</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
@@ -76,19 +79,19 @@
 	<div id="headerwrap">
   		<header class="clearfix">
   		 	<div class="span12">
-  		 		<img src="assets/img/logo.png">
-  				<h1>ONE PAGE</h1>
-  				<h1>HTML THEME</h1>
+          <h1>GENERAL ASSEMB.LY</h1>
+  		 		<img src="assets/img/logo.png" id="big">
+          <h1>SAN FRANCISCO FALL 2013</h1>
   			</div>
   		</header>
 	</div>
-	
+
     <!-- Welcome -->
 	<div id="welcomewrap">
 		<header class="clearfix">
 			<div class="container">
 			<div class="span12">
-				<h2>Welcome to our site. This theme was created using Bootstrap 2.3.0</h2>
+				<h2>Welcome to General Assemb.ly's Fall 2013 WDI Yearbook.</h2>
 			</div>
 			</div>
 		</header>
@@ -99,38 +102,42 @@
 
 	<div id="servicewrap">
 		<div class="container">
-			<h2>OUR SERVICES</h2>
+			<h2>ABOUT US</h2>
 			<br>
 			<div class="row">
 				<div class="span3">
 					<div class="mask">
-						<img src="assets/img/step1.png" alt="">
-						<h4>Inquire</h4>
-						<p>We begin with a simple question: Why does your business exist? Why create this brand, app, holographic guide to the galaxy? We explore your competition and what sets you apart.</p>
-					</div>
-				</div><!-- span3 -->
-				
-				<div class="span3">
-					<div class="mask">
-						<img src="assets/img/step2.png" alt="">
-						<h4>Plan</h4>
-						<p>A project's success hinges upon a well-conceived plan. We create a strategic plan that outlines what we will make together, how make the most of your budget and what success looks like.</p>
-					</div>
-				</div><!-- span3 -->
-				
-				<div class="span3">
-					<div class="mask">
-						<img src="assets/img/step3.png" alt="">
-						<h4>Design</h4>
-						<p>This is when the sketching begins. The design process never begins in front of the computer. We start loose, identify concepts, iterate, and refine them through regular dialogue with you.</p>
+						<!-- <img src="assets/img/step1.png" alt=""> -->
+            <i class="fa fa-laptop fa-5x"></i>
+						<h4>FRAMEWORKS</h4>
+						<p>Mastered Ruby on Rails framework along with exposure to cutting-edge JavaScript frameworks such as Backbone and Angluar.JS.</p>
 					</div>
 				</div><!-- span3 -->
 
 				<div class="span3">
 					<div class="mask">
-						<img src="assets/img/step4.png" alt="">
-						<h4>Launch</h4>
-						<p>For us, this means involvement in every detail of production and fulfillment for your project. We continue to stay in touch, and closely monitor our babys success out in the wild.</p>
+						<!-- <img src="assets/img/step2.png" alt=""> -->
+            <i class="fa fa-eye fa-5x"></i>
+						<h4>FRONT-END</h4>
+						<p>HTML5, CSS3, JavaScript, and jQuery to build stylish, flexible, and responsive web applications.</p>
+					</div>
+				</div><!-- span3 -->
+
+				<div class="span3">
+					<div class="mask">
+						<!-- <img src="assets/img/step3.png" alt=""> -->
+            <i class="fa fa-cogs fa-5x"></i>
+						<h4>BACK-END</h4>
+						<p>Integrated SQL databases to create a fully functional and full-stack web applications.</p>
+					</div>
+				</div><!-- span3 -->
+
+				<div class="span3">
+					<div class="mask">
+						<!-- <img src="assets/img/step4.png" alt=""> -->
+            <i class="fa fa-flask fa-5x"></i>
+						<h4>CS</h4>
+						<p>Reviewed data structures and algorithms to optimize program web application efficiency and scalability.</p>
 					</div>
 				</div><!-- span3 -->
 			</div><!-- row -->
@@ -146,11 +153,11 @@
     		<br>
     		<br>
     		<div class="span6">
-    			<h1>WE ARE SIMPLE</h1>
+    			<h1>WE ARE WEB DEVELOPERS</h1>
     			<h2>We define and design customer experiences in the digital channel. Simple & Flat is a nationally-recognised integrated marketing agency based in Madrid, Spain.</h2>
     			<p>Our aim is simple. We want to impress you. So we listen. We research your industry, your competitors and your market. We make sure we understand your unique challenges and pressures. And then we bring our expertise to the table, designing and delivering compelling, first-class solutions that meet your specific requirements.</p>
     		</div><!-- span6 -->
-    		
+
     		<div class="span6">
     			<img src="assets/img/responsive.png" alt="">
     		</div><!-- span6 -->
@@ -158,7 +165,7 @@
 		<br>
 		<br>
     </div> <!-- /container -->
-    
+
     <!-- Single Item Image -->
     <div id="example">
 		<div class="container">
@@ -170,48 +177,189 @@
     </div><!-- example -->
 		<br>
 		<br>
-	
-	<!-- About Section Begins -->		
+
+	<!-- About Section Begins -->
     	<section id="about"><br><br></section>
     	<div id="aboutwrap">
     		<div class="container">
 				<h2>ABOUT US</h2>
 				<br>
 				<div class="row">
+
 					<div class="span4">
 						<img src="assets/img/logo.png" alt="">
-						<h3>Meet the founders of Simple & Flat design agency.</h3>
-						<h4>The agency was founded in April 2010. The two founders have more than 10 years of experience on the field.</h4>
+						<h3>Meet the students of the Web Development Immersive program.</h3>
 					</div><!-- span4 -->
-					
+
 					<div class="span4">
 						<div class="about_item">
-							<div class="about_item_center">
-								<img src="assets/img/photo1.jpg" alt="">
-								<div class="clear"></div>
-				                <h3>Marcel Newman</h3>
-				                <p>Marcel is a talented illustrator and designer, a big Star Wars fan and loves exploring new ways to push the boundaries on projects. YouÃ¢â‚¬â„¢ll often find him tinkering on his iPad whilst enjoying a pint of fine real ale.</p>
-				                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-							</div>
+              <p class="heading">Seimith Suth</p>
+                <div class="content">
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+              <p class="heading">Jennie Louie</p>
+                <div class="content">
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+              <p class="heading">Kristine Lai</p>
+                <div class="content">
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+
+              <p class="heading">Seimith Suth</p>
+                <div class="content">
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+              <p class="heading">Jennie Louie</p>
+                <div class="content">
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+              <p class="heading">Kristine Lai</p>
+                <div class="content">
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+
+              <p class="heading">Seimith Suth</p>
+                <div class="content">
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+              <p class="heading">Jennie Louie</p>
+                <div class="content">
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+              <p class="heading">Kristine Lai</p>
+                <div class="content">
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+
+              <p class="heading">Seimith Suth</p>
+                <div class="content">
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+              <p class="heading">Jennie Louie</p>
+                <div class="content">
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+              <p class="heading">Kristine Lai</p>
+                <div class="content">
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+
+              <p class="heading">Seimith Suth</p>
+                <div class="content">
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+              <p class="heading">Jennie Louie</p>
+                <div class="content">
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+              <p class="heading">Kristine Lai</p>
+                <div class="content">
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+
+              <p class="heading">Seimith Suth</p>
+                <div class="content">
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+              <p class="heading">Jennie Louie</p>
+                <div class="content">
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+              <p class="heading">Kristine Lai</p>
+                <div class="content">
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
 						</div><!-- about_item -->
 					</div><!-- span4 -->
-					
-					<div class="span4">
-						<div class="about_item">
-							<div class="about_item_center">
-								<img src="assets/img/photo2.jpg" alt="">
-								<div class="clear"></div>
-				                <h3>Jane Doe</h3>
-				                <p>Jane  is a sharp designer and UI fanatic. She loves creating simple and usable interfaces and has a wonderfully keen eye for detail. She enjoys getting away from her Macbook Pro and going for a run in the countryside.</p>
-				                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-							</div>
-						</div><!-- about_item -->
-					</div><!-- span4 -->
-					
-				</div><!-- End Row -->
-    		</div><!-- End aboutwrap -->
-		</div><!-- End Container -->
-		
+
+          <div class="span4">
+            <div class="about_item">
+
+              <p class="heading">Seimith Suth</p>
+                <div class="content">
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+              <p class="heading">Jennie Louie</p>
+                <div class="content">
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+              <p class="heading">Kristine Lai</p>
+                <div class="content">
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+
+              <p class="heading">Seimith Suth</p>
+                <div class="content">
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+              <p class="heading">Jennie Louie</p>
+                <div class="content">
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+              <p class="heading">Kristine Lai</p>
+                <div class="content">
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+
+              <p class="heading">Seimith Suth</p>
+                <div class="content">
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+              <p class="heading">Jennie Louie</p>
+                <div class="content">
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+              <p class="heading">Kristine Lai</p>
+                <div class="content">
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+
+              <p class="heading">Seimith Suth</p>
+                <div class="content">
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+              <p class="heading">Jennie Louie</p>
+                <div class="content">
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+              <p class="heading">Kristine Lai</p>
+                <div class="content">
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+
+              <p class="heading">Seimith Suth</p>
+                <div class="content">
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+              <p class="heading">Jennie Louie</p>
+                <div class="content">
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+              <p class="heading">Kristine Lai</p>
+                <div class="content">
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+
+              <p class="heading">Seimith Suth</p>
+                <div class="content">
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+              <p class="heading">Jennie Louie</p>
+                <div class="content">
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+              <p class="heading">Kristine Lai</p>
+                <div class="content">
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+
+            </div><!-- about_item -->
+          </div><!-- span4 -->
+				</div><!-- row -->
+			</div><!-- End Container -->
+		</div><!-- End aboutwrap -->
+
 		<!-- Studio Carousel and Quote -->
 		<div class="container">
 		<br>
@@ -235,7 +383,7 @@
 	        			<a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
 					</div><!-- myCarousel -->
 				</div><!-- span6 -->
-				
+
 				<div class="span6">
 					<div id="aboutwrap">
 						<h3>It's the little things...</h3>
@@ -249,7 +397,7 @@
 
 	<!-- Project Section Begins -->
     	<section id="projects"></section>
-    	
+
 		<div id="projectwrap">
 	  		<header class="clearfix">
 		  		<div class="container">
@@ -261,7 +409,7 @@
 		  		</div><!-- container -->
 	  		</header>
 		</div><!-- projectwrap -->
-		
+
     	<div id="projectwrap_2">
 			<div class="container">
 			<br>
@@ -280,7 +428,7 @@
 							</div><!-- project_item_center -->
 						</div><!-- project_item -->
 					</div><!-- span4 -->
-					
+
 					<div class="span4">
 						<div class="project_item">
 							<div class="project_item_center">
@@ -292,7 +440,7 @@
 							</div><!-- project_item_center -->
 						</div><!-- project_item -->
 					</div><!-- span4 -->
-					
+
 					<div class="span4">
 						<div class="project_item">
 							<div class="project_item_center">
@@ -304,14 +452,14 @@
 							</div><!-- project_item_center -->
 						</div><!-- project_item -->
 					</div><!-- span4 -->
-					
+
 				</div><!-- row -->
 				<br>
 				<hr>
 			</div><!-- container -->
 		</div><!-- projectwrap2 -->
-		
-	<!-- Clients Logo -->		
+
+	<!-- Clients Logo -->
 		<div class="container">
 			<div class="row">
 				<div class="clients">
@@ -368,7 +516,7 @@
 				</div><!-- row -->
 			</div><!-- container -->
 		</div><!-- example -->
-		
+
 	<!-- Price Tables -->
 		<div id="pricewrap">
 			<div class="container">
@@ -390,7 +538,7 @@
 		                            <a class="button" href="#">Sign Up</a>
 		                        </li>
 		                    </ul>
-	                    
+
 		                    <ul class="pricing-column span2">
 		                        <li class="pricing-title">Beginner</li>
 		                        <li class="pricing-price">$20 <span>/month</span>
@@ -404,7 +552,7 @@
 		                            <a class="button" href="#">Sign Up</a>
 		                        </li>
 		                    </ul>
-	                    
+
 		                    <ul class="pricing-column span3">
 		                        <li class="pricing-title">Special Offer!</li>
 		                        <li class="pricing-price">$50 <span>/month</span>
@@ -418,7 +566,7 @@
 		                            <a class="button" href="#">Sign Up</a>
 		                        </li>
 		                    </ul>
-	                    
+
 		                    <ul class="pricing-column span5">
 		                        <li class="pricing-title">Special Offer!</li>
 		                        <li class="pricing-price">$100 <span>/month</span>
@@ -433,13 +581,13 @@
 		                        </li>
 		                    </ul>
 	                	</div><!-- Pricing-Table Row Fluid -->
-	            	</div><!-- Pricing-Table-Wraper -->				
+	            	</div><!-- Pricing-Table-Wraper -->
             	</div><!-- Span12 -->
 			</div><!-- Container -->
         	<br>
         	<br>
 		</div><!-- PriceWrap -->
-		
+
 	<!-- Contact Section Begins -->
 		<section id="contact"><br><br></section>
 
@@ -456,7 +604,7 @@
 						<h4>Madrid, Spaing</h4>
 						<h4>hello@domain.com</h4>
 					</div><!-- span4 -->
-					
+
 					<div class="span4">
 						<img src="assets/img/twitter.png" alt="">
  						<div id="jstwitter" class="clearfix">
@@ -466,7 +614,7 @@
 						<script type="text/javascript" src="http://api.twitter.com/1/statuses/user_timeline/wrapbootstrap.json?callback=twitterCallback2&count=1"></script>
 						<h4>Update by @WrapBootstrap</h4>
 					</div><!-- span4 -->
-					
+
 					<div class="span4">
 						<img src="assets/img/face.jpg" alt="" class="img-circle">
 						<h4>Thanks for visiting us!</h4>
@@ -486,7 +634,7 @@
     <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.prettyPhoto.js"></script>
     <script type="text/javascript" src="assets/js/theme.js"></script>
-   
+
 
   </body>
 </html>
