@@ -15,14 +15,20 @@
 
 // ///////////////
 
-$(document).on('ready', function() {
-  $('#bio').hide();
+$(document).ready(function() {
+  $('p#bio').hide();
+  $('.about_item_center').on('mouseover', '#student_img', function() {
+    $('p#bio').hide().slideDown();
+  })
+  $('.about_item_center').on('mouseout', '#student_img', function() {
+    $('p#bio').slideUp();
+  })
 })
 
-$('body').on('mouseover', '#student_img', function() {
-  $('p#bio').slideDown();
-})
+// $('body').on('click', '#student_img', function() {
+//   $('p#bio').slideDown();
+// })
 
-$('#student_img').on('mouseout', function() {
-  $('p#bio').slideUp();
-})
+// $('#student_img').on('click', function() {
+//   $('p#bio').slideUp();
+// })
