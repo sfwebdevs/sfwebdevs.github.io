@@ -16,10 +16,13 @@
 $(document).ready(function() {
   $(".content").hide();
   //toggle the componenet with class msg_body
-  $(".heading").click(function()
+  $(".heading").mouseover(function()
   {
     $(this).next(".content").slideToggle(300);
   });
+  $(".heading").mouseout(function() {
+    $(this).next(".content").slideToggle(300);
+  })
 });
 
     // carousel demo
