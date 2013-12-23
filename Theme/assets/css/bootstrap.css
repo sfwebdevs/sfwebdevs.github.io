@@ -98,6 +98,10 @@ sub {
   bottom: -0.25em;
 }
 
+#big {
+  max-width: 20%;
+}
+
 img {
   width: auto\9;
   height: auto;
