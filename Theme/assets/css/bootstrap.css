@@ -98,14 +98,10 @@ sub {
   bottom: -0.25em;
 }
 
-#big {
-  max-width: 20%;
-}
-
 img {
   width: auto\9;
   height: auto;
-  max-width: 100%;
+  max-width: 20%;
   vertical-align: middle;
   border: 0;
   -ms-interpolation-mode: bicubic;
