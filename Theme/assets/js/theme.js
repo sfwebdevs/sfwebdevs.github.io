@@ -1,34 +1,32 @@
+///////////////////////////////////////////////
 
-    // carousel demo
+// $(document).ready(function() {
+//   $('p#bio').hide();
+//   $('.about_item_center').on('mouseover', '#student_img', function() {
+//     $('p#bio').hide().slideDown();
+//     // console.log(this)
+//   })
+//   $('.about_item_center').on('mouseout', '#student_img', function() {
+//     $('p#bio').slideUp();
+//     // console.log(this)
+//   })
+// })
 
-!function ($) {
-
-    $('#myCarousel').carousel()
-
-}(window.jQuery)
-
-!function ($) {
-
-    $('#myCarousel2').carousel()
-
-}(window.jQuery)
-
-// ///////////////
 
 $(document).ready(function() {
-  $('p#bio').hide();
-  $('.about_item_center').on('mouseover', '#student_img', function() {
-    $('p#bio').hide().slideDown();
-  })
-  $('.about_item_center').on('mouseout', '#student_img', function() {
-    $('p#bio').slideUp();
-  })
-})
+  $(".content").hide();
+  //toggle the componenet with class msg_body
+  $(".heading").click(function()
+  {
+    $(this).next(".content").slideToggle(300);
+  });
+});
 
-// $('body').on('click', '#student_img', function() {
-//   $('p#bio').slideDown();
-// })
+    // carousel demo
+!function ($) {
+  $('#myCarousel').carousel()
+}(window.jQuery)
 
-// $('#student_img').on('click', function() {
-//   $('p#bio').slideUp();
-// })
+!function ($) {
+  $('#myCarousel2').carousel()
+}(window.jQuery)
