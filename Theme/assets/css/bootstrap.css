@@ -5987,3 +5987,7 @@ a.badge:focus {
 .affix {
   position: fixed;
 }
+p.heading, div.content {
+  padding: 10px;
+  text-align: left;
+}
