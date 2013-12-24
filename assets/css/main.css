@@ -38,7 +38,7 @@ h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{margin-left:12px;font-size
 /********** BOOTSTRAP MODIFICATIONS **********/
 /* Navbar Tweaks */
 .navbar-inverse .navbar-inner {
-    background-color: #ec602f;
+    background-color: #34495e;
     background-repeat: repeat-x;
 	border-color: transparent;
 	background-image: none;
@@ -99,7 +99,7 @@ h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{margin-left:12px;font-size
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover,
 .navbar .nav > .active > a:focus {
-  color: #424242;
+  color: #95a5a6;
   text-decoration: none;
   background-color: transparent;
   -webkit-box-shadow: none;
