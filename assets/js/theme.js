@@ -1,27 +1,16 @@
-///////////////////////////////////////////////
-
-// $(document).ready(function() {
-//   $('p#bio').hide();
-//   $('.about_item_center').on('mouseover', '#student_img', function() {
-//     $('p#bio').hide().slideDown();
-//     // console.log(this)
-//   })
-//   $('.about_item_center').on('mouseout', '#student_img', function() {
-//     $('p#bio').slideUp();
-//     // console.log(this)
-//   })
-// })
-
-
 $(document).ready(function() {
   $(".content").hide();
+  $("#studentdisplay").hide();
   //toggle the componenet with class msg_body
-  $(".heading").mouseover(function()
-  {
-    $(this).next(".content").slideToggle(300);
+  $(".heading").mouseover(function() {
+    $("#meetstudents").hide();
+    $("#studentdisplay").show();
+    // $(this).next(".content").slideToggle(300);
   });
   $(".heading").mouseout(function() {
-    $(this).next(".content").slideToggle(300);
+    $("#meetstudents").show();
+    $("#studentdisplay").hide();
+    // $(this).next(".content").slideToggle(300);
   })
 });
 
