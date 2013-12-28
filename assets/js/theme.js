@@ -1,6 +1,3 @@
-
-
-
 $(document).ready(function() {
   $(".content").hide();
   $("#studentdisplay").hide();
@@ -20,11 +17,11 @@ $(document).ready(function() {
     $("#meetstudents").hide();
     $("#studentdisplay").show();
   });
-  $(".heading").mouseout(function() {
-    $("#meetstudents").show();
-    $("#studentdisplay").hide();
-    // $(this).next(".content").slideToggle(300);
-  })
+  // $(".heading").mouseout(function() {
+  //   $("#meetstudents").show();
+  //   $("#studentdisplay").hide();
+  //   // $(this).next(".content").slideToggle(300);
+  // })
 });
 
     // carousel demo
