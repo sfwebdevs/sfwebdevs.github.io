@@ -2,7 +2,7 @@ $(document).ready(function() {
   $(".content").hide();
   $("#studentdisplay").hide();
   //toggle the componenet with class msg_body
-  $(".heading").mouseover(function() {
+  $(".heading").click(function() {
     // Grabbing the current student info
     var name = $(this).context.innerText;
     var pic = $(this).next().children()[0].src;
