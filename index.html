@@ -20,6 +20,13 @@
       body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
       }
+      .heading:hover {
+        color: #ffffff;
+        background-color: #bdc3c7;
+      }
+      .heading:active {
+        background-color: white;
+      }
     </style>
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
 
@@ -64,7 +71,7 @@
           <a class="brand" href="#">Web Development Immersive SF 2013</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Home</a></li>
               <li><a href="#services">About</a></li>
               <li><a href="#about">Students</a></li>
               <li><a href="#projects">Projects</a></li>
@@ -78,12 +85,14 @@
     <!-- Header Image and Logo -->
 	<div id="headerwrap">
   		<header class="clearfix">
-  		 	<div class="span12">
-          <br>
-          <h1>GENERAL ASSEMB.LY</h1>
-  		 		<img src="assets/img/logo.png" id="big">
-          <h1>SAN FRANCISCO FALL 2013</h1>
-  			</div>
+  		 	<div class="container">
+          <div class="span12">
+            <br>
+            <h1>GENERAL ASSEMB.LY</h1>
+    		 		<img src="assets/img/logo.png" id="big">
+            <h1>SAN FRANCISCO | FALL 2013</h1>
+    			</div>
+         </div>
   		</header>
 	</div>
 
@@ -111,7 +120,7 @@
 						<!-- <img src="assets/img/step1.png" alt=""> -->
             <i class="fa fa-laptop fa-5x"></i>
 						<h4>FRAMEWORKS</h4>
-						<p>Mastered Ruby on Rails framework along with exposure to cutting-edge JavaScript frameworks such as Backbone and Angluar.JS.</p>
+						<p>Mastered Ruby on Rails framework along with exposure to cutting-edge JavaScript frameworks such as Backbone and Angular.JS.</p>
 					</div>
 				</div><!-- span3 -->
 
@@ -129,7 +138,7 @@
 						<!-- <img src="assets/img/step3.png" alt=""> -->
             <i class="fa fa-cogs fa-5x"></i>
 						<h4>BACK-END</h4>
-						<p>Integrated SQL databases to create a fully functional and full-stack web applications.</p>
+						<p>Integrated SQL databases to create fully functional and full-stack web applications.</p>
 					</div>
 				</div><!-- span3 -->
 
@@ -154,8 +163,9 @@
     		<br>
     		<br>
     		<div class="span6">
-    			<h1>WE ARE WEB DEVELOPERS</h1><br>
-    			<h2>At General Assembl.y we acquired a work-ready skill set and fluency in full stack web development.</h2><br>
+    			<h1>WE ARE WEB DEVELOPERS</h1>
+    			<h2>At General Assembl.y we acquired a work-ready skill set and fluency in full-stack web development.</h2>
+
     			<p>Every student in our cohort developed their own portfolio that showcases their fluency in Ruby, Ruby on Rails, Backbone, Angular.JS, JavaScript, jQuery, HTML5, CSS3, and more!</p>
     		</div><!-- span6 -->
 
@@ -188,176 +198,227 @@
 				<br>
 				<div class="row">
 
-					<div class="span4">
-						<img src="assets/img/logo.png" alt="">
-            <h3>Meet the students of the Web Development Immersive program.</h3>
+					<div id="meetstudents" class="span6">
+						<img src="assets/img/logo.png" alt="" style="max-width: 400px">
+            <h3>Meet the students of the Web Development Immersive program at GA.</h3><p>
             <br/><br/>
-            <h4>New York. Bawston. Tennessee. Houston.</h4>
+            <h4>New York | Boston | Tennessee | Houston</h4>
             <br/><br/>
-						<h3>Our cohort was huge. They came from all over the world. Some of them traveled all the way from England, Australia, and Germany!</h3>
+						<h3>This cohort was huge. Students came from all over the world. Some traveled all the way from England, Australia, and Germany!</h3>
 					</div><!-- span4 -->
 
-					<div class="span4">
+          <div id="studentdisplay" class="span6">
+            <img src="assets/img/logo.png" alt="" class='studentPic' style="max-width: 200px">
+            <h3 class='studentName'>Student Name</h3>
+            <br/><br/>
+            <h4>Project 1 | Project 2 | Project 3 </h4>
+            <br/><br/>
+            <p class='studentBio'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+          </div>
+          <div class="span6"><em>(Click on a student name to view their bio and projects)</em></div>
+					<div class="span3" style="cursor: pointer">
             <div class="about_item">
               <h4 class="heading">Leon Acosta</h4>
                 <div class="content">
-                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                 </div>
               <h4 class="heading">Francisco Alberini</h4>
                 <div class="content">
-                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <img src="assets/images/profile_pics/francisco.jpg" align="left"> <p>Prior to WDI, Francisco spent 6 years getting his hands dirty in all things social media. He built the social media strategy for Publishers Clearing House, and developed a social media agency business while product managing an enterprise social media management platform at Adworthy Inc. Realizing that his true passion was in web development, Francisco moved to San Francisco from New York and joined the Web Development Immersive program at GA. Francisco is excited to embark on this next chapter as a full-stack web developer with an eye for product and strategy.</p>
                 </div>
               <h4 class="heading">Skyler Benge</h4>
                 <div class="content">
-                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                 </div>
 
               <h4 class="heading">Lo Benichou</h4>
                 <div class="content">
-                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <img src="assets/images/profile_pics/lauren.jpg" align="left">
+                  <p>Lauren Benichou is a multimedia journalist and web developer.  After a few years as a radio journalist (NPR, KQED), Lauren decided to switch gears and learn back and front-end web development. She is also known as a “javascript journalist” and thrives to give online content a life of its own.</p>
                 </div>
               <h4 class="heading">Wes Cargen</h4>
                 <div class="content">
-                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                 </div>
               <h4 class="heading">James Casey</h4>
                 <div class="content">
-                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <img src="assets/images/profile_pics/james.jpg" align="left"> <p>James was introduced to the technology world during college, and subsequently went on to earn a degree in 3D animation from Savannah College of Art and Design. He was recently introduced to the programming side of the tech industry, and he hasn't looked back since. James successfully completed General Assembly's intensive web immersive program, and continues to devote his time to expanding his skills as a web developer.</p>
+                  <p>https://github.com/jamkcas/goodwill</p>
                 </div>
-
+                <div class='studentProjects'>
+                  <img src="assets/images/projects/james/goodwill_tracker.png">
+                  <h3>Goodwill Tracker</h3>
+                  <p>http://goodwill-tracker.herokuapp.com/</p>
+                </div>
               <h4 class="heading">Marco Cerna</h4>
                 <div class="content">
-                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                 </div>
               <h4 class="heading">Nico Crisafulli</h4>
                 <div class="content">
-                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <img src="assets/images/profile_pics/nico.jpg" align="left">
+                  <p>Nico's background is filled with enabling travel and indulging in it, creating art and taking fancy pictures. He ended up giving in to the coding bug this year and taking an immersive web-development course in San Francisco that would end up blowing his little mind. He has a 2-year-old son who does that exact thing every single day.</p>
+                </div>
+                <div class='studentProjects'>
+                  <img src="assets/images/projects/nico/bandhub1.png">
+                  <h3>BandHub</h3>
+                  <p>http://bandhub.herokuapp.com/</p>
+                </div>
+                <div class='studentProjects'>
+                  <img src="assets/images/projects/nico/wifly1.png">
+                  <h3>WiFly</h3>
+                  <p>http://wiflyinthesky.herokuapp.com</p>
                 </div>
               <h4 class="heading">Spencer Eldred</h4>
                 <div class="content">
-                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                 </div>
 
               <h4 class="heading">Stepen Johnston</h4>
                 <div class="content">
-                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                 </div>
               <h4 class="heading">Bryan Kahler</h4>
                 <div class="content">
-                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> <p>Bryan loves to play basketball, go to comedy clubs, and writing web apps. Bryan hates carnival rides and does not believe in ghosts.  </p>
+                </div>
+                <div class='studentProjects'>
+                  <img src="assets/images/projects/bryan/roomie.png">
+                  <h3>Roomie Karma</h3>
+                  <p>http://roomiekarma.herokuapp.com/</p>
                 </div>
               <h4 class="heading">Mike Kyriacou</h4>
                 <div class="content">
-                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> <p>Mike Kyriacou is a serial entrepreneur and investor from Australia with characteristic  wildly long hair and an unplacable ‘foreign accent’.  Mike has founded and built a number of for-profit and non-profit ventures, typically involving fun or creative applications of some interesting aspect of engineering, finance or entertainment. He has a passion for exploring new or complex ideas, meeting people and crafting elegant solutions that optimize across resources, usability and target market.At the time of writing Mike is the equivalent of a clumsy star wrestler in web development: Lots of power and potential but not yet ready for World Tap Dancing Championships..</p>
                 </div>
 
               <h4 class="heading">Sara LaFassett</h4>
                 <div class="content">
-                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <img src="assets/images/profile_pics/sara.jpg" align="left">
+                  <p>Sara got involved in the tech world when she was 15 as a Quality Assurance Analyst. She spent 2 years in high school testing insurance rating software (yawn) before moving to San Francisco to major in Sociology at the University of San Francisco. After a few years dabbling in other industries, Sara realized that software development was her true calling. She prefers to work with the full stack, and is quickly falling in love with robust javascript apps built with backbone. Her next goal is to improve her skills in javascript test frameworks. Testing is key! When not writing apps, Sara enjoys cooking and tries to spend as much time sewing as she does ripping out stitches. She also has an unreasonable love for period British dramas and has seen every film incarnation of Sense and Sensibility. She lives in Concord (which is definitely in the Bay Area!) with her husband, Zeph, and their two fluffy cats, Azrael and Jake.</p>
+                </div>
+                <div class='studentProjects'>
+                  <img src="assets/images/projects/sara/DashRun.png">
+                  <h3>Dash Run</h3>
+                  <p>http://www.dashrun.co</p>
+                </div>
+                <div class='studentProjects'>
+                  <img src="assets/images/projects/sara/LederFeier.png">
+                  <h3>Leder Feier</h3>
+                  <p>http://leder-feier.herokuapp.com</p>
+                </div>
+                <div class='studentProjects'>
+                  <img src="assets/images/projects/sara/LunchCounter.png">
+                  <h3>Lunch Counter</h3>
+                  <p>http://lunchcounter.herokuapp.com/</p>
                 </div>
               <h4 class="heading">Kristine Lai</h4>
                 <div class="content">
-                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <img src="assets/images/profile_pics/kristine.jpg" align="left">
+                  <p>Hi, I'm Kristine.  I've built storm drains and pump stations at my previous job as a civil engineer.  Best part of being an engineer is the challenge of solving problems using what is available to me, and I enjoy finding new ways of tackling old problems.  I am looking for opportunities where I can continue to learn and improve my web development skills.</p>
+                </div>
+                <div class='studentProjects'>
+                  <img src="assets/images/projects/kristine/KristineProject1.png">
+                  <h3>ThirtyFive Studio</h3>
+                  <p>http://thrityfivestudio.herokuapp.com</p>
+                </div>
+                <div class='studentProjects'>
+                  <img src="assets/images/projects/kristine/KristineProject2.png">
+                  <h3>Defaced</h3>
+                  <p>https://defaced.herokuapp.com/</p>
+                </div>
+                <div class='studentProjects'>
+                  <img src="assets/images/projects/kristine/KristineProject3.png">
+                  <h3>Field Inspector</h3>
+                  <p>http://field-inspector.herokuapp.com</p>
                 </div>
               <h4 class="heading">Santiago Gómez Lavín</h4>
                 <div class="content">
-                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <img src="assets/images/profile_pics/santiago.jpeg" align="left">
+                  <p>Santiago has spent the last 5 years working in finance and renewable energy, living abroad in Europe, Southeast Asia and Latin America.  Despite graduating with a Computer Engineering degree, he never worked professionally in the tech industry, but his experience in other fields made him realize how much he loved software.  After spending some time slowly trying to learn on his own, Santiago decided to join GA in San Francisco to kickstart his new career in web development.  He is a javascript lover, fluent in Spanish and English, and is ready to use his new full-stack development skills to create amazing apps for people around the world.</p>
                 </div>
 
               <h4 class="heading">Jason Levy</h4>
                 <div class="content">
-                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                </div>
-              <h4 class="heading">Jennie Louie</h4>
-                <div class="content">
-                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                </div>
-              <h4 class="heading">Amy MacKinnon</h4>
-                <div class="content">
-                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <img src="assets/images/profile_pics/jason.jpg" align="left">
+                  <p>Jason was born and raised in the San Francisco Bay Area.  He graduated from Cornell University as an Economics major.  He has worked in finance, consulting, and his own entrepreneurial business.  He is passionate about building and developing great things to help people in their lives.</p>
                 </div>
             </div><!-- about_item -->
           </div><!-- span4 -->
 
-          <div class="span4">
+          <div class="span3" style="cursor: pointer">
             <div class="about_item">
-
+              <h4 class="heading">Jennie Louie</h4>
+                <div class="content">
+                  <img src="assets/images/profile_pics/jennie.jpg" align="left">
+                  <p>During my stint at WDI, I gravitated towards creating practical web apps.  For the individual class projects I designed and built tools both for specialized use of existing web resources (Walktopus Google-map-based walk preview app), and for novel applications (Stitcherdoodle crochet and knitting project management app).  Prior to WDI I worked as an environmental engineering consultant and manager specializing in air quality.  I was responsible for scoping problems and identifying key questions; developing plans to address these questions; overseeing junior associates to complete analyses; and evaluating results.  I want to use my web app design and project management skills to develop tools that address diverse challenges in various sectors.</p>
+                </div>
+              <h4 class="heading">Amy MacKinnon</h4>
+                <div class="content">
+                  <img src="assets/images/profile_pics/amy.jpg" align="left">
+                  <p>Amy has been passionate about technology her entire life and started building websites in 1999. She took General Assembly's Web Development Immersive to increase her skills in back-end development and jumpstart a career in web development. Before attending General Assembly she worked as a freelance graphic designer, specializing in print design.</p>
+                </div>
               <h4 class="heading">Tejas Mehta</h4>
                 <div class="content">
-                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left">
+                  <p>Having a love for coding was never the problem, rather being around it was at first quite rare. That changed when I started GuitarDistrict.com where I quickly had to learn the many concepts of web design and development. This passion and intrigue led me to learn more on my own and to eventually enroll in General Assembly's WDI program. I look forward to the next challenge where my entrepreneurial background is merged with my love for coding.</p>
                 </div>
               <h4 class="heading">Christian Nelson</h4>
                 <div class="content">
-                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                </div>
+              <h4 class="heading">Miriam Neubauer</h4>
+                <div class="content">
+                  <img src="assets/images/profile_pics/miriam.jpg" align="left"> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                 </div>
               <h4 class="heading">Stephen Noe</h4>
                 <div class="content">
-                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <img src="assets/images/profile_pics/stevenN.jpeg" align="left"> <p>Post-graduation, Steve returned to the LA Area, rejoining Small Dog Creative, Santa Clarita's Best Web Design Company, as a Web Developer to gain the repetitive experience necessary to become proficient at the skills acquired at GA. And towards continuing on the path of code enlightenment and becoming involved in the community, Steve established three regional Code for America Brigades (Santa Clarita, Ventura, and Santa Barbara). Finally, GA gave Steve the confidence and ability to pursue his dream of establishing Entrypreneurs, a non-profit educational institute that will teach business and technology to those less fortunate.</p>
                 </div>
 
               <h4 class="heading">Francisco Orozco</h4>
                 <div class="content">
-                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                 </div>
               <h4 class="heading">Alex Sanchez</h4>
                 <div class="content">
-                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                 </div>
               <h4 class="heading">Jee Song</h4>
                 <div class="content">
-                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> <p>Prior to joining WDI, Jee worked at a non profit consulting firm where his work involved helping school districts implement new funding formulas for students. Now with the help of WDI, he seeks to build education tools that are engaging and accessible to all students.</p>
                 </div>
 
               <h4 class="heading">Colt Steele</h4>
                 <div class="content">
-                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                 </div>
               <h4 class="heading">Shindo Strzelczyk</h4>
                 <div class="content">
-                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> <p>Shindo grew up in Michigan and moved to San Francisco after high school to study Zen Buddhism. He went on to attend UC Berkeley and studied in France before earning a bachelor's degree in linguistics. Having designed several websites since middle school, Shindo chose to pursue a career in programming to challenge himself and prepare for graduate study in cognitive science. His main interest in web development centers on finding new ways to use technology to bring people together socially and politically.</p>
                 </div>
               <h4 class="heading">Seimith Suth</h4>
                 <div class="content">
-                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                 </div>
 
               <h4 class="heading">Imogen Wentworth</h4>
                 <div class="content">
-                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <img src="assets/images/profile_pics/imogen.jpg" align="left">
+                  <p>I’m a developer with a passion for branding, design and usability. My interests lean towards the front end, because I love to make beautiful, useful things. Having said that, my current obsession is playing around with server-side JavaScript frameworks (namely Node.js and Meteor). Before WDI, I was a copywriter for a creative agency, working on campaigns for global consumer brands. I became a developer so I could build things people want.</p>
                 </div>
               <h4 class="heading">Luke Whiting</h4>
                 <div class="content">
-                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <img src="assets/images/profile_pics/luke.jpg" align="left"> <p>Luke Whiting is a full-stack web developer with a diverse background ranging from startup sales to healthcare. Passionate about crafting elegant products and delightful user experiences, Luke is currently looking for a challenging entry-level development or product management position with a great team. Luke resides in San Francisco, where he enjoys exploring the city as it’s meant to be explored: on two wheels.</p>
                 </div>
               <h4 class="heading">Dana Wright</h4>
                 <div class="content">
-                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> <p>I'm a world traveler and surf bum cleverly disguised as a web developer. Since it became clear that just being worldly and sporting a tan does not a successful dude make, I’ve focused my energies on the web, which happily has proven to be an awesome decision. I experiment with HTML, CSS, and JavaScript more-or-less constantly; dabbling with PHP and Ruby; and inhaling a wide variety of potentially useless information through a few hundred RSS feeds. Through this process, I’ve managed to build a number of sites that are fun, engaging and serve a genuine purpose.</p>
                 </div>
 
               <h4 class="heading">Richard Yang</h4>
                 <div class="content">
-                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                </div>
-              <h4 class="heading">Nope</h4>
-                <div class="content">
-                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                </div>
-              <h4 class="heading">Nope</h4>
-                <div class="content">
-                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                </div>
-
-              <h4 class="heading">Nope</h4>
-                <div class="content">
-                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                </div>
-              <h4 class="heading">Nope</h4>
-                <div class="content">
-                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                </div>
-              <h4 class="heading">Nope</h4>
-                <div class="content">
-                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <img src="http://fakeimg.pl/100x100/?text=Image" align="left"> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                 </div>
 
             </div><!-- about_item -->
@@ -425,9 +486,9 @@
 					<br>
 					<div class="span4">
 						<div class="project_item">
-							<div class="project_item_center">
+							<div class="project_item_center project1">
 								<div class="mask2">
-									<a href="assets/img/pr01.jpg" rel="prettyPhoto"><img src="assets/img/pr01.jpg" alt=""></a>
+									<a href="assets/img/pr01.jpg" target='_blank'><img src="assets/img/pr01.jpg" alt=""></a>
 								</div>
 								<div class="clear"></div>
 				                <h3>Responsive Design</h3>
@@ -437,9 +498,9 @@
 
 					<div class="span4">
 						<div class="project_item">
-							<div class="project_item_center">
+							<div class="project_item_center project2">
 								<div class="mask2">
-									<a href="assets/img/pr02.jpg" rel="prettyPhoto"><img src="assets/img/pr02.jpg" alt=""></a>
+									<a href="assets/img/pr02.jpg" target='_blank'><img src="assets/img/pr02.jpg" alt=""></a>
 								</div>
 								<div class="clear"></div>
 				                <h3>A Book Apart</h3>
@@ -449,9 +510,9 @@
 
 					<div class="span4">
 						<div class="project_item">
-							<div class="project_item_center">
+							<div class="project_item_center project3">
 								<div class="mask2">
-									<a href="assets/img/pr03.jpg" rel="prettyPhoto"><img src="assets/img/pr03.jpg" alt=""></a>
+									<a href="assets/img/pr03.jpg" target='_blank'><img src="assets/img/pr03.jpg" alt=""></a>
 								</div>
 								<div class="clear"></div>
 				                <h3>Number Four</h3>

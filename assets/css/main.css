@@ -38,7 +38,7 @@ h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{margin-left:12px;font-size
 /********** BOOTSTRAP MODIFICATIONS **********/
 /* Navbar Tweaks */
 .navbar-inverse .navbar-inner {
-    background-color: #ec602f;
+    background-color: #34495e;
     background-repeat: repeat-x;
 	border-color: transparent;
 	background-image: none;
@@ -99,7 +99,7 @@ h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{margin-left:12px;font-size
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover,
 .navbar .nav > .active > a:focus {
-  color: #424242;
+  color: #95a5a6;
   text-decoration: none;
   background-color: transparent;
   -webkit-box-shadow: none;
@@ -350,20 +350,24 @@ hr {
 	background-color:#fff;
 }
 
+.mask2 {
+  border-bottom: 1px solid #4b4646;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+}
+
 /* Project Image Hover */
 .mask2 img {
 	margin: 0 auto;
 	max-width: 100%;
-	display: block;
+	display: inline;
 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
     filter: alpha(opacity=80);
 	opacity: 0.8;
-	box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
 	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .mask2 img:hover{
@@ -413,13 +417,12 @@ hr {
 	width:100%;
 	position:relative;
 	z-index:1;
+  text-align: center;
 }
 
 .project_item_center img{
 	border:0px;
-	width:100%;
 	height:auto;
-	border-bottom:1px solid #4b4646;
 }
 
 .project_item h3 {
