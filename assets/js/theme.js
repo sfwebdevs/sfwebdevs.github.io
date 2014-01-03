@@ -15,7 +15,7 @@ var assignProjects = function() {
     var index = Math.floor(Math.random() * projects.length);
     // Setting the first project
     var p = projects[index];
-    console.log(p.children[0].src);
+    // console.log(p.children[0].src);
     if (p.children[0].src) {
       $('.project1 img').attr('src', p.children[0].src);
       $('.project1 h3').text(p.children[1].innerHTML);
@@ -27,7 +27,7 @@ var assignProjects = function() {
     index = Math.floor(Math.random() * projects.length);
     // Setting the second project
     p = projects[index];
-    console.log(p.children[0].src);
+    // console.log(p.children[0].src);
     if (p.children[0].src) {
       $('.project2 img').attr('src', p.children[0].src);
       $('.project2 h3').text(p.children[1].innerHTML);
@@ -39,7 +39,7 @@ var assignProjects = function() {
     index = Math.floor(Math.random() * projects.length);
     // Setting the third project
     p = projects[index];
-    console.log(p.children[0].src);
+    // console.log(p.children[0].src);
     if (p.children[0].src) {
       $('.project3 img').attr('src', p.children[0].src);
       $('.project3 h3').text(p.children[1].innerHTML);
@@ -55,18 +55,19 @@ $(document).ready(function() {
   $(".studentProjects").hide();
   $("#studentdisplay").hide();
 
+
   $(".heading").click(function() {
     // Grabbing the current student info
     var name = $(this).context.innerText;
     var pic = $(this).next().children()[0].src;
     var bio = $(this).next().children()[1].innerHTML;
     var project1 = $(this).next().find('h3')[0].innerText;
-    console.log($(this).next().find('h3')[0].innerText)
     var project1link = $(this).next().find('.url')[0].innerText;
     var project2 = $(this).next().find('h3')[1].innerText;
     var project2link = $(this).next().find('.url')[1].innerText;
     var project3 = $(this).next().find('h3')[2].innerText;
     var project3link = $(this).next().find('.url')[2].innerText;
+    var gitLink = $(this).next().find('.gitHub');
 
     // Setting the display info to the current student's info
     $('.studentName').text(name);
@@ -78,7 +79,7 @@ $(document).ready(function() {
     $('.p2').text(project2);
     $('.p3').attr('href', project3link);
     $('.p3').text(project3);
-
+    $('.gitHubLink').html(gitLink);
 
     $("#meetstudents").hide();
     $("#studentdisplay").show();
