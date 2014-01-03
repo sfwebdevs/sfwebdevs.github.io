@@ -15,28 +15,36 @@ var assignProjects = function() {
     var index = Math.floor(Math.random() * projects.length);
     // Setting the first project
     var p = projects[index];
-    $('.project1 img').attr('src', p.children[0].src);
-    $('.project1 h3').text(p.children[1].innerHTML);
-    $('.project1 a').attr('href', p.children[2].innerHTML);
+    console.log(p.children[0].src);
+    if (p.children[0].src) {
+      $('.project1 img').attr('src', p.children[0].src);
+      $('.project1 h3').text(p.children[1].innerHTML);
+      $('.project1 a').attr('href', p.children[2].innerHTML);
+    }
     // Removing this index from the projects array so project wont be selected again
     projects.splice(index,1);
 
     index = Math.floor(Math.random() * projects.length);
     // Setting the second project
     p = projects[index];
-    $('.project2 img').attr('src', p.children[0].src);
-    $('.project2 h3').text(p.children[1].innerHTML);
-    $('.project2 a').attr('href', p.children[2].innerHTML);
+    console.log(p.children[0].src);
+    if (p.children[0].src) {
+      $('.project2 img').attr('src', p.children[0].src);
+      $('.project2 h3').text(p.children[1].innerHTML);
+      $('.project2 a').attr('href', p.children[2].innerHTML);
+    }
 
     projects.splice(index,1);
 
     index = Math.floor(Math.random() * projects.length);
     // Setting the third project
     p = projects[index];
-    $('.project3 img').attr('src', p.children[0].src);
-    $('.project3 h3').text(p.children[1].innerHTML);
-    $('.project3 a').attr('href', p.children[2].innerHTML);
-
+    console.log(p.children[0].src);
+    if (p.children[0].src) {
+      $('.project3 img').attr('src', p.children[0].src);
+      $('.project3 h3').text(p.children[1].innerHTML);
+      $('.project3 a').attr('href', p.children[2].innerHTML);
+    }
     // Fading the projects back in
     $('.project_item_center').fadeIn();
   });
