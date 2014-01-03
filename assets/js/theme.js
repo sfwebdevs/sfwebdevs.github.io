@@ -60,23 +60,24 @@ $(document).ready(function() {
     var name = $(this).context.innerText;
     var pic = $(this).next().children()[0].src;
     var bio = $(this).next().children()[1].innerHTML;
-    var project1 = $(this).next().children()[2].innerText;
-    var project1link = $(this).next().children()[2].innerText;
-    var project2 = $(this).next().children()[3].innerText;
-    var project2link = $(this).next().children()[3].innerText;
-    var project3 = $(this).next().children()[4].innerText;
-    var project3link = $(this).next().children()[4].innerText;
+    var project1 = $(this).next().find('h3')[0].innerText;
+    console.log($(this).next().find('h3')[0].innerText)
+    var project1link = $(this).next().find('.url')[0].innerText;
+    var project2 = $(this).next().find('h3')[1].innerText;
+    var project2link = $(this).next().find('.url')[1].innerText;
+    var project3 = $(this).next().find('h3')[2].innerText;
+    var project3link = $(this).next().find('.url')[2].innerText;
 
     // Setting the display info to the current student's info
     $('.studentName').text(name);
     $('.studentBio').text(bio);
     $('.studentPic').attr('src', pic);
-    $('.project1').attr('href', project1link);
-    $('.project1').text(project1);
-    $('.project2').attr('href', project2link);
-    $('.project2').text(project2);
-    $('.project3').attr('href', project3link);
-    $('.project3').text(project3);
+    $('.p1').attr('href', project1link);
+    $('.p1').text(project1);
+    $('.p2').attr('href', project2link);
+    $('.p2').text(project2);
+    $('.p3').attr('href', project3link);
+    $('.p3').text(project3);
 
 
     $("#meetstudents").hide();
