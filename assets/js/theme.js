@@ -66,7 +66,10 @@ $(document).ready(function() {
     var project2link = $(this).next().find('.url')[1].innerText;
     var project3 = $(this).next().find('h3')[2].innerText;
     var project3link = $(this).next().find('.url')[2].innerText;
-    var gitLink = $(this).next().find('.gitHub');
+    var gitLink = $(this).next().find('.gitHub')[0].childNodes;
+
+    // Initially hiding users links (githun, aboutme, linkedin)
+    $('.links').hide();
 
     // Setting the display info to the current student's info
     $('.studentName').text(name);
@@ -78,7 +81,20 @@ $(document).ready(function() {
     $('.p2').text(project2);
     $('.p3').attr('href', project3link);
     $('.p3').text(project3);
-    $('.gitHubLink').html(gitLink);
+
+    // Setting and showing the user's links if they exist
+    if(gitLink[1]) {
+      $('.gh').attr('href', gitLink[1].href);
+      $('.gh').show();
+    };
+    if(gitLink[3]) {
+      $('.li').attr('href', gitLink[3].href);
+      $('.li').show();
+    };
+    if(gitLink[5]) {
+      $('.am').attr('href', gitLink[5].href);
+      $('.am').show();
+    };
 
     $("#meetstudents").hide();
     $("#studentdisplay").show();
