@@ -15,7 +15,6 @@ var assignProjects = function() {
     var index = Math.floor(Math.random() * projects.length);
     // Setting the first project
     var p = projects[index];
-    // console.log(p.children[0].src);
     if (p.children[0].src) {
       $('.project1 img').attr('src', p.children[0].src);
       $('.project1 h3').text(p.children[1].innerHTML);
