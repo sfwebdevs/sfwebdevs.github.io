@@ -56,7 +56,6 @@ $(document).ready(function() {
 
   $(".heading").click(function() {
     // Grabbing the current student info
-    console.log("Clicked that");
     var name = $(this).context.innerHTML;
     var pic = $(this).next().children()[0].src;
     var bio = $(this).next().children()[1].innerHTML;
